@@ -56,7 +56,7 @@ AppAsset::register($this);
                 <?php Pjax::end(); ?>
             </div>
             <!-- single obj -->
-            <div class="col-md-4 col-lg-4  col-sm-6">
+            <div class="col-md-6 col-lg-6  col-sm-6">
                     main contianer
             </div>
         </div>

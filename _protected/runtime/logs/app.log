@@ -720,3 +720,400 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1512482850.206
     'REQUEST_TIME' => 1512482850
 ]
+2017-12-06 19:28:15 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:660
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('course')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('course', 'schema', false)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('course')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\CourseSearch), Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\CourseSearch.php(54): yii\base\Model->validate()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(43): app\models\CourseSearch->search(Array)
+#19 [internal function]: app\controllers\SchoolController->actionIndex()
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/index', Array)
+#24 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:597
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('course')
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('course', 'schema', false)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('course')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\CourseSearch), Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\CourseSearch.php(54): yii\base\Model->validate()
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(43): app\models\CourseSearch->search(Array)
+#17 [internal function]: app\controllers\SchoolController->actionIndex()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/index', Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2017-12-06 19:28:15 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][info][application] $_COOKIE = [
+    'PHPSESSID' => 'i4f2haepl7m3pg1l659jgpaj5i'
+    '_csrf' => 'dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=i4f2haepl7m3pg1l659jgpaj5i; _csrf=dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50939'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/school/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/school/index'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512584895.148
+    'REQUEST_TIME' => 1512584895
+]
+2017-12-06 19:29:57 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:660
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('course')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('course', 'schema', false)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('course')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\CourseSearch), Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\CourseSearch.php(54): yii\base\Model->validate()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(43): app\models\CourseSearch->search(Array)
+#19 [internal function]: app\controllers\SchoolController->actionIndex()
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/index', Array)
+#24 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:597
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('course')
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('course', 'schema', false)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('course')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\CourseSearch), Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\CourseSearch.php(54): yii\base\Model->validate()
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(43): app\models\CourseSearch->search(Array)
+#17 [internal function]: app\controllers\SchoolController->actionIndex()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/index', Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2017-12-06 19:29:57 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][info][application] $_COOKIE = [
+    'PHPSESSID' => 'i4f2haepl7m3pg1l659jgpaj5i'
+    '_csrf' => 'dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=i4f2haepl7m3pg1l659jgpaj5i; _csrf=dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50985'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/school/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/school/index'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512584997.583
+    'REQUEST_TIME' => 1512584997
+]
+2017-12-06 19:33:54 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: course in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php:349
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\CourseSearch), Array)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\CourseSearch.php(54): yii\base\Model->validate()
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(43): app\models\CourseSearch->search(Array)
+#7 [internal function]: app\controllers\SchoolController->actionIndex()
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/index', Array)
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#14 {main}
+2017-12-06 19:33:54 [::1][-][i4f2haepl7m3pg1l659jgpaj5i][info][application] $_COOKIE = [
+    'PHPSESSID' => 'i4f2haepl7m3pg1l659jgpaj5i'
+    '_csrf' => 'dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=i4f2haepl7m3pg1l659jgpaj5i; _csrf=dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '51075'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/school/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/school/index'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512585234.883
+    'REQUEST_TIME' => 1512585234
+]
+2017-12-06 20:15:28 [::1][1][v2isljnhqkkgomuqovtb9fb0q4][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\school\create.php in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SchoolController))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SchoolController))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SchoolController.php(81): yii\base\Controller->render('create', Array)
+#3 [internal function]: app\controllers\SchoolController->actionCreate()
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/create', Array)
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-12-06 20:15:28 [::1][1][v2isljnhqkkgomuqovtb9fb0q4][info][application] $_COOKIE = [
+    '_csrf' => 'dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj\";}'
+    'PHPSESSID' => 'v2isljnhqkkgomuqovtb9fb0q4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/school/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=dbc847d191219f93cdc755f0d63f7e9d86d4a6d0fd0c7dbe42e01f408797976ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rE-7QGs3-_IO3zYoo0HQ9vYCdpk7zJmj%22%3B%7D; PHPSESSID=v2isljnhqkkgomuqovtb9fb0q4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '51367'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/school/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/school/create'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512587728.377
+    'REQUEST_TIME' => 1512587728
+]
