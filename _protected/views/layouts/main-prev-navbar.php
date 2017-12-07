@@ -20,53 +20,14 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-    <style>
-        .navbar-brand {
-            padding: 3px;
-        }
-        .navbar-brand img {
-            height: 100%;
-        }
-        
-        div{
-            border: 1px solid black;
-        }
-        .row{
-            height: 80vh;
-            border: 1px solid red;
-        }
-        .mainCol{
-            height: 100%;
-            
-            
-        }
-        .mainContainer{
-            height: 100%;
-            
-        }
-        *{
-            box-sizing: border-box;
-        }
-        
-        
-    </style>
-    
-    <?php echo $this->head() ;
-    // TODO: Make register css file work!
-    $this->registerCssFile(Yii::getAlias('@webroot').'/uploads/_protected/views/site/css/site.css', [
-    'depends' => [\yii\bootstrap\BootstrapAsset::className()],
-    // 'media' => 'print',
-], 'main-site-css');
-?>
-
+    <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
 <div class="wrap">
     <?php
     NavBar::begin([
-        // 'brandLabel' => Yii::t('app', Yii::$app->name),
-        'brandLabel' => Html::img('siteImages/theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), // /*'class' => 'some-class', */
+        'brandLabel' => Yii::t('app', Yii::$app->name),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
