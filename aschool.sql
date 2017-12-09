@@ -175,14 +175,14 @@ CREATE TABLE `student` (
   `name` varchar(50) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `img_name` varchar(50) NOT NULL
+  `img` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`id`, `name`, `phone`, `email`, `img_name`) VALUES
+INSERT INTO `student` (`id`, `name`, `phone`, `email`, `img`) VALUES
 (3, 'Doron', '050-2525241', 'doron@gmail.com', 'uploads/Doron.jpg');
 
 -- --------------------------------------------------------

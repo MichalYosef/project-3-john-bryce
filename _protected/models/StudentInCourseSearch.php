@@ -19,7 +19,7 @@ class StudentInCourseSearch extends StudentInCourse
     {
         return [
             [['student_id', 'course_id'], 'integer'],
-            [['registration_date'], 'safe'],
+           
         ];
     }
 
@@ -61,7 +61,7 @@ class StudentInCourseSearch extends StudentInCourse
         $query->andFilterWhere([
             'student_id' => $this->student_id,
             'course_id' => $this->course_id,
-            'registration_date' => $this->registration_date,
+           
         ]);
 
         return $dataProvider;

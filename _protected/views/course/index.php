@@ -27,9 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'description',
-            'img',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            'img'
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

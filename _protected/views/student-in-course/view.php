@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'student_id',
             'course_id',
-            'registration_date',
+            
         ],
     ]) ?>
 

@@ -28,8 +28,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'phone',
             'email:email',
-            'img_name',
-
+            [
+                'label' => 'Image',
+                'attribute' => 'img',
+                'format' => 'html',
+                'value' => function($model){
+                    return yii\bootstrap\Html::img($model->img,['width'=>'100']);
+                }
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

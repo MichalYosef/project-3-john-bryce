@@ -30,9 +30,8 @@ class StudentInCourse extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['student_id', 'course_id', 'registration_date'], 'required'],
+            [['student_id', 'course_id'], 'required'],
             [['student_id', 'course_id'], 'integer'],
-            [['registration_date'], 'safe'],
             [['course_id'], 'exist', 'skipOnError' => true, 'targetClass' => Course::className(), 'targetAttribute' => ['course_id' => 'id']],
             [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => Student::className(), 'targetAttribute' => ['student_id' => 'id']],
         ];
@@ -44,9 +43,9 @@ class StudentInCourse extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'student_id' => 'Student ID',
-            'course_id' => 'Course ID',
-            'registration_date' => 'Registration Date',
+            'student_id' => 'Student',
+            'course_id' => 'Course',
+
         ];
     }
 

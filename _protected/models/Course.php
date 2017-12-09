@@ -36,6 +36,7 @@ class Course extends \yii\db\ActiveRecord
             [['name'], 'string', 'max' => 100],
             [['description'], 'string', 'max' => 500],
             [['img'], 'string', 'max' => 30],
+            
         ];
     }
 
@@ -49,6 +50,7 @@ class Course extends \yii\db\ActiveRecord
             'name' => 'Name',
             'description' => 'Description',
             'img' => 'Img',
+            
         ];
     }
 

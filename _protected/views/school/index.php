@@ -47,7 +47,7 @@ AppAsset::register($this);
                         'filterModel' => $studentSearchModel,
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
-                            'img_name',
+                            'img',
                             'name',
                             'phone',
                             

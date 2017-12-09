@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use yii\web\View;
 
 AppAsset::register($this);
 ?>
@@ -35,19 +36,20 @@ AppAsset::register($this);
             height: 80vh;
             border: 1px solid red;
         }
-        .mainCol{
+        .leftCol, .midCol, .mainContainer{
             height: 100%;
             
             
         }
-        .mainContainer{
-            height: 100%;
-            
-        }
+        
         *{
             box-sizing: border-box;
         }
-        
+        .container {
+   
+            padding-left: 0;
+            padding-right: 0;
+        }
         
     </style>
     
@@ -64,10 +66,12 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="wrap">
     <?php
+
+
+
     NavBar::begin([
-        // 'brandLabel' => Yii::t('app', Yii::$app->name),
-        'brandLabel' => Html::img('siteImages/theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), // /*'class' => 'some-class', */
-        'brandUrl' => Yii::$app->homeUrl,
+        
+        'brandLabel' => Html::img(Yii::getAlias('@siteImages').'theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), // /*'class' => 'some-class', */
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
         ],
@@ -76,13 +80,31 @@ AppAsset::register($this);
     
     // we do not need to display About and Contact pages to employee+ roles
     if (!Yii::$app->user->can('employee')) {
-        $menuItems[] = ['label' => Yii::t('app', 'School'), 'url' => ['/school/index']];
-        $menuItems[] = ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']];
+        $menuItems[] = ['label' => Yii::t('app', 'School'), 
+                        // 'class' => "pull-left",
+                        'url' =>  Yii::$app->homeUrl,
+                        'linkOptions' => ['id' => 'school']];
+
+        $menuItems[] = ['label' => Yii::t('app', 'Administration'), 
+                        'url' => Yii::$app->homeUrl,
+                        'linkOptions' => ['id' => 'admin']];
     }
+
+    // 
+    $this->registerJs(
+        "$('#school').on('click', function() { alert('School Button clicked!'); });",
+        View::POS_READY,
+        'school-block');
+
+    $this->registerJs(
+        "$('#admin').on('click', function() { alert('Admin Button clicked!'); });",
+        View::POS_READY,
+        'admin-block');
 
     // display Users to admin+ roles
     if (Yii::$app->user->can('manager')){
-        $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
+        $menuItems[] = ['label' => Yii::t('app', 'Users'), 
+                        'url' => ['/user/index']];
     }
     
     // display Logout to logged in users
@@ -94,9 +116,9 @@ AppAsset::register($this);
         ];
     }
 
-    // display Signup and Login pages to guests of the site
+    // display Login page to guests of the site
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => Yii::t('app', 'Signup'), 'url' => ['/site/signup']];
+        
         $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
     }
 

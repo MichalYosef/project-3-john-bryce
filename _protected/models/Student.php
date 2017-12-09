@@ -11,13 +11,15 @@ use Yii;
  * @property string $name
  * @property string $phone
  * @property string $email
- * @property string $img_name
+ * @property string $img
  *
  * @property StudentInCourse[] $studentInCourses
  * @property Course[] $courses
  */
 class Student extends \yii\db\ActiveRecord
 {
+    public $fileImage;
+    
     /**
      * @inheritdoc
      */
@@ -32,8 +34,9 @@ class Student extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'phone', 'email', 'img_name'], 'required'],
-            [['name', 'phone', 'email', 'img_name'], 'string', 'max' => 50],
+            [['name', 'phone', 'email'], 'required'],
+            [['img'], 'file', 'extensions' => 'png,jpg,gif,jpeg'],
+            [['name', 'phone', 'email'], 'string', 'max' => 50],
         ];
     }
 
@@ -47,7 +50,7 @@ class Student extends \yii\db\ActiveRecord
             'name' => 'Name',
             'phone' => 'Phone',
             'email' => 'Email',
-            'img_name' => 'Img Name',
+            'img' => 'Upload Image',
         ];
     }
 
