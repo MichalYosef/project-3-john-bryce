@@ -55,9 +55,8 @@ AppAsset::register($this);
     
     <?php echo $this->head() ;
     // TODO: Make register css file work!
-    $this->registerCssFile(Yii::getAlias('@webroot').'/uploads/_protected/views/site/css/site.css', [
-    'depends' => [\yii\bootstrap\BootstrapAsset::className()],
-    // 'media' => 'print',
+    $this->registerCssFile(Yii::getAlias('@web').'/_protected/views/site/css/site.css', [
+1    // 'media' => 'print',
 ], 'main-site-css');
 ?>
 
@@ -71,7 +70,7 @@ AppAsset::register($this);
 
     NavBar::begin([
         
-        'brandLabel' => Html::img(Yii::getAlias('@siteImages').'theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), // /*'class' => 'some-class', */
+        'brandLabel' => Html::img('@siteImages'.'/theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), 
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
         ],

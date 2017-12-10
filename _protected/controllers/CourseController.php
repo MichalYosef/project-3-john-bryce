@@ -65,6 +65,7 @@ class CourseController extends Controller
     {
         $model = new Course();
 
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -84,9 +85,15 @@ class CourseController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //get the data the user inserted on the form
+        // and copy it into the model that was just created
+        if ($model->load(Yii::$app->request->post()) 
+        // run save (by default runs validation rules in the model->rules function)
+            && $model->save()) 
+            {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            // if validation fails go back to the form
             return $this->render('update', [
                 'model' => $model,
             ]);

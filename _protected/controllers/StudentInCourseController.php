@@ -66,7 +66,22 @@ class StudentInCourseController extends Controller
     {
         $model = new StudentInCourse();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()))
+        {
+            try
+            {
+                $model->save();
+            }
+            catch(\yii\db\Exception $e )
+            {
+                if($e->getCode() == 23000)
+                {
+                    // key violation allready exist
+                }
+
+            }
+            
+        
             return $this->redirect(['view', 'student_id' => $model->student_id, 'course_id' => $model->course_id]);
         } else {
             return $this->render('create', [

@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'course_id',
            
 
-            ['class' => 'yii\grid\ActionColumn'],
+            // ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

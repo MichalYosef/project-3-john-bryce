@@ -11,7 +11,7 @@ use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
 use app\models\StudentInCourse;
 use app\models\Course;
-
+use yii\base\Application;
 /**
  * StudentController implements the CRUD actions for Student model.
  */
@@ -54,29 +54,51 @@ class StudentController extends Controller
      */
     public function actionView($id)
     {
-        $studentModel = $this->findModel($id); 
+        $model = $this->findModel($id); 
         
         // $courseSearchModel = new CourseSearch();
         // $courseDataProvider = $courseSearchModel->search(Yii::$app->request->queryParams);
 
-        $studentCourses = StudentInCourse::find()->where(['student_id' => $id]);//$this->getStudentRegisteredCourses();//
+        // $studentCourses = StudentInCourse::find()->where(['student_id' => $id]);//$this->getStudentRegisteredCourses();//
 
-        
+        $studentCourses = $model->getStudentInCourses();//$this-> getStudentRegisteredCourses($id);
+
+        $model->SetCourses($studentCourses);
 
         return $this->render('view', [
-            'studentModel' => $studentModel,
-            'studentCourses' => $studentCourses,
+            'model' => $model,
+            // 'studentCourses' => $studentCourses,
             
         ]);
         
         
     }
 
-    public function getStudentRegisteredCourses()
+    public function getStudentRegisteredCourses($id)
     {
+        $sqlQuery = 'SELECT course.id, course.name 
+                     FROM course
+                     INNER JOIN student_in_course 
+                     ON student_in_course.course_id = course.id
+                     WHERE student_in_course.student_id = '.$id;
+
+        $courses = Yii::$app->db->createCommand($sqlQuery)->queryAll();
+
+        // $rs=array();
+        // foreach($list as $item){
+        //     //process each item here
+        //     $rs[]=$item['id'];
+
+        // }
+        return $courses;
+        // $coursesOfStudent = Course::find()->joinWith([
+        //     'student_in_course' => function ($query) {
+        //         $query->onCondition(['student_in_course.student_id' => $id]);
+        //     },
+        // ])->all();
         // student's registered courses, matching 'id' column of `course` to 'course_id' in student_in_course
-        return $this->hasMany(Course::className(), ['course_id' => 'id'])
-                    ->via('student_in_course');
+        // return $this->hasMany(Course::className(), ['course_id' => 'id'])
+        //             ->via('student_in_course');
     }
 
     /**
@@ -137,9 +159,14 @@ class StudentController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+         //get the data the user inserted on the form
+        // and copy it into the model that was just created
+        if ($model->load(Yii::$app->request->post()) 
+            // run save (by default runs validation rules in the model->rules function)
+            && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            // if validation fails go back to the form
             return $this->render('update', [
                 'model' => $model,
             ]);

@@ -1,12 +1,13 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\DetailView;
+// use yii\widgets\DetailView;
+use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Student */
 
-$this->title = $studentModel->name;
+$this->title = $model->name;
 // $this->params['breadcrumbs'][] = ['label' => 'Students', 'url' => ['index']];
 // $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -18,7 +19,7 @@ $this->title = $studentModel->name;
         'studentCourses' => $studentCourses, -->
 
     <p>
-        <?= Html::a('Edit', ['update', 'id' => $studentModel->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Edit', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?php 
             // echo Html::a('Delete', ['delete', 'id' => $model->id], [
             // 'class' => 'btn btn-danger',
@@ -29,16 +30,39 @@ $this->title = $studentModel->name;
             // ]) 
         ?>
     </p>
+   
+    
+    <?php
+    // echo DetailView::widget([
+    //     'model' => $studentModel,
+    //     'attributes' => [
+    //         'id',
+    //         'name',
+    //         'phone',
+    //         'email:email',
+    //         'img:image',
+    //     ],
+    // ]) 
 
-    <?= DetailView::widget([
-        'model' => $studentModel,
-        'attributes' => [
+    echo DetailView::widget([
+        'model'=>$model,
+        'condensed'=>true,
+        'hover'=>true,
+        'mode'=>DetailView::MODE_VIEW,
+        'panel'=>[
+            'heading'=>'Student # ' . $model->id,
+            'type'=>DetailView::TYPE_INFO,
+        ],
+        'attributes'=>[
             'id',
             'name',
             'phone',
             'email:email',
             'img:image',
-        ],
-    ]) ?>
+            // ['attribute'=>'studentCourses', 'type'=>DetailView::INPUT_CHECKBOX_LIST]
+            // ['attribute'=>'publish_date', 'type'=>DetailView::INPUT_DATE],
+        ]
+    ]);
+    ?>
 
 </div>

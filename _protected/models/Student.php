@@ -19,6 +19,7 @@ use Yii;
 class Student extends \yii\db\ActiveRecord
 {
     public $fileImage;
+    public $studentCourses;
     
     /**
      * @inheritdoc
@@ -26,6 +27,11 @@ class Student extends \yii\db\ActiveRecord
     public static function tableName()
     {
         return 'student';
+    }
+
+    public function SetCourses($studentCourses)
+    {
+        $this->studentCourses = $studentCourses;
     }
 
     /**
@@ -36,7 +42,12 @@ class Student extends \yii\db\ActiveRecord
         return [
             [['name', 'phone', 'email'], 'required'],
             [['img'], 'file', 'extensions' => 'png,jpg,gif,jpeg'],
-            [['name', 'phone', 'email'], 'string', 'max' => 50],
+            [['name', 'phone'], 'string', 'max' => 50],
+            ['email', 'filter', 'filter' => 'trim'],
+            ['email', 'email'],
+            ['studentCourses','safe']
+            
+            
         ];
     }
 
@@ -51,6 +62,7 @@ class Student extends \yii\db\ActiveRecord
             'phone' => 'Phone',
             'email' => 'Email',
             'img' => 'Upload Image',
+            'studentCourses' => 'Courses'
         ];
     }
 

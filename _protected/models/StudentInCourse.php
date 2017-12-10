@@ -34,6 +34,8 @@ class StudentInCourse extends \yii\db\ActiveRecord
             [['student_id', 'course_id'], 'integer'],
             [['course_id'], 'exist', 'skipOnError' => true, 'targetClass' => Course::className(), 'targetAttribute' => ['course_id' => 'id']],
             [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => Student::className(), 'targetAttribute' => ['student_id' => 'id']],
+            // [['course_id'], 'exist', 'targetClass' => Course::className(), 'targetAttribute' => ['course_id' => 'id'], 'message'=>Yii::t('Course id doesnt exist')],
+            // [['student_id'], 'exist', 'targetClass' => Student::className(), 'targetAttribute' => ['student_id' => 'id'], 'message'=>Yii::t('Student id doesnt exist')],
         ];
     }
 

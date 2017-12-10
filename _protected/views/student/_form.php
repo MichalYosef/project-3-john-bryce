@@ -12,18 +12,28 @@ use yii\helpers\ArrayHelper;
 
 <div class="student-form">
 
-    <?php $form = ActiveForm::begin(
+    <?php 
+    
+    $form = ActiveForm::begin(
         ['options' => ['enctype' => 'multipart/form-data']]
-    ); ?>
+    ); 
+    
+    echo $form->field($model, 'name')->textInput(['maxlength' => true]);
+    echo $form->field($model, 'phone')->textInput(['maxlength' => true]);
+    echo $form->field($model, 'email')->textInput(['maxlength' => true]);
+    echo $form->field($model, 'img')->fileInput();
+    
+    $courses = $model->getCourses();
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'img')->fileInput() ?>
-
+    // echo checkBoxList(CModel $model, string $attribute, array $data, array $htmlOptions=array ( ));
+    // foreach($courses as $course) 
+    // {
+    //     echo $form->checkBox($model,'attribute');
+    // }
+    /*
+    
+    */
+    ?>
     
 
     <div class="form-group">

@@ -4125,3 +4125,1523 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1512857576.609
     'REQUEST_TIME' => 1512857576
 ]
+2017-12-10 10:33:20 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY' in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `student_in_course` (`student_id`, `course_id`) VALUES (5, 1) in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `st...')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '5-1' for key 'PRIMARY'
+)
+
+2017-12-10 10:33:20 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_POST = [
+    '_csrf' => 'mn8k-AVoctkIoeRk3u6H1T3nSd9O4J5mDp-h3lDZmCnrGEutfVtHoWPnkTWZuM-hTZRksA2C9yRaq_awZ6DWSw=='
+    'StudentInCourse' => [
+        'student_id' => '5'
+        'course_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '165'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '54754'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512898399.649
+    'REQUEST_TIME' => 1512898399
+]
+2017-12-10 10:42:54 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY' in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `student_in_course` (`student_id`, `course_id`) VALUES (5, 1) in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `st...')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '5-1' for key 'PRIMARY'
+)
+
+2017-12-10 10:42:53 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_POST = [
+    '_csrf' => '2VsQmvWAFUr5AMdalgsnOeK5GcFfazNdOUf4YZTUDAKoPH_PjbMgMpJGsgvRXW9Nkso0rhwJWh9tc68Po61CYA=='
+    'StudentInCourse' => [
+        'student_id' => '5'
+        'course_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '165'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56158'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512898973.226
+    'REQUEST_TIME' => 1512898973
+]
+2017-12-10 11:05:52 [::1][2][o4taha107e0itrburcl4fn7esb][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\BaseYii::t(), 1 passed in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\models\StudentInCourse.php on line 37 and at least 2 expected in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\BaseYii.php:509
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\models\StudentInCourse.php(37): yii\BaseYii::t('Course id doesn...')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(447): app\models\StudentInCourse->rules()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(413): yii\base\Model->createValidators()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(429): yii\base\Model->getValidators()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(477): yii\base\Model->getActiveValidators('student_id')
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired('student_id')
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\widgets\ActiveField.php(610): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student-in-course\_form.php(18): yii\widgets\ActiveField->dropDownList(Array, '<span class="st...')
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student-in-course\create.php(18): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentInCourseController))
+#15 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\StudentInCourseController))
+#16 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#18 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#21 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#22 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#24 {main}
+2017-12-10 11:05:50 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student-in-course/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '58421'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512900350.228
+    'REQUEST_TIME' => 1512900350
+]
+2017-12-10 11:06:05 [::1][2][o4taha107e0itrburcl4fn7esb][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\BaseYii::t(), 1 passed in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\models\StudentInCourse.php on line 37 and at least 2 expected in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\BaseYii.php:509
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\models\StudentInCourse.php(37): yii\BaseYii::t('Course id doesn...')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(447): app\models\StudentInCourse->rules()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(413): yii\base\Model->createValidators()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(429): yii\base\Model->getValidators()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(477): yii\base\Model->getActiveValidators('student_id')
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired('student_id')
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\widgets\ActiveField.php(610): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student-in-course\_form.php(18): yii\widgets\ActiveField->dropDownList(Array, '<span class="st...')
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student-in-course\create.php(18): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentInCourseController))
+#15 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\StudentInCourseController))
+#16 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#18 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#21 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#22 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#24 {main}
+2017-12-10 11:06:05 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student-in-course/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '58404'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512900364.828
+    'REQUEST_TIME' => 1512900364
+]
+2017-12-10 11:06:46 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY' in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-1' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `student_in_course` (`student_id`, `course_id`) VALUES (5, 1) in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `st...')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('student_in_cour...', Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentInCourseController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\StudentInCourseController->actionCreate()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student-in-cour...', Array)
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '5-1' for key 'PRIMARY'
+)
+
+2017-12-10 11:06:45 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_POST = [
+    '_csrf' => 'kyNfwQtuMxw1vqvAqS9n65Crb1ghBDCx8wIH8ewhmt3iRDCUc10GZF743pHueS-f4NhCN2JmWfOnNlCf21jUvw=='
+    'StudentInCourse' => [
+        'student_id' => '5'
+        'course_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '165'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '58525'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student-in-course/create'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512900404.945
+    'REQUEST_TIME' => 1512900404
+]
+2017-12-10 12:44:45 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:1] yii\base\ErrorException: Uncaught Error: Call to undefined method Yii::app() in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php:83
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(64): app\controllers\StudentController->getStudentRegisteredCourses('5')
+#1 [internal function]: app\controllers\StudentController->actionView('5')
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#6 C:\xampp\htdocs\yii2\ in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php:83
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\StudentController->actionView('???')
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}('???', '???')
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('???')
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction('???', '???')
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction('???', '???')
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest('???')
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#7 {main}
+2017-12-10 12:44:31 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '62404'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512906271.545
+    'REQUEST_TIME' => 1512906271
+]
+2017-12-10 12:50:53 [::1][2][o4taha107e0itrburcl4fn7esb][error][Error] Error: Call to undefined method Yii::app() in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php:83
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(64): app\controllers\StudentController->getStudentRegisteredCourses('5')
+#1 [internal function]: app\controllers\StudentController->actionView('5')
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-10 12:50:48 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '62504'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512906647.278
+    'REQUEST_TIME' => 1512906647
+]
+2017-12-10 13:32:56 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php:48
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\web\View->renderPhpFile()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\web\View->renderFile()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\web\View->render()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(68): app\controllers\StudentController->render()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\StudentController->actionView()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#11 {main}
+2017-12-10 13:32:52 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '64153'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512909171.971
+    'REQUEST_TIME' => 1512909171
+]
+2017-12-10 13:33:31 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php:53
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\web\View->renderPhpFile()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\web\View->renderFile()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\web\View->render()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(68): app\controllers\StudentController->render()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\StudentController->actionView()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#11 {main}
+2017-12-10 13:33:31 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '64164'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512909210.718
+    'REQUEST_TIME' => 1512909210
+]
+2017-12-10 13:33:49 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\bower/bootstrap3-dialog in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('kartik\\dialog\\D...', Array, true)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('kartik\\dialog\\D...')
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('kartik\\dialog\\D...')
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-dialog\Dialog.php(246): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-dialog\Dialog.php(198): kartik\dialog\Dialog->registerAssets()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Widget.php(140): kartik\dialog\Dialog->run()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(1210): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(793): kartik\detail\DetailView->registerAssets()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(731): kartik\detail\DetailView->runWidget()
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Widget.php(140): kartik\detail\DetailView->run()
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php(48): yii\base\Widget::widget(Array)
+#13 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#16 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#17 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(68): yii\base\Controller->render('view', Array)
+#18 [internal function]: app\controllers\StudentController->actionView('5')
+#19 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#22 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#23 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#25 {main}
+2017-12-10 13:33:43 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '64173'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512909223.509
+    'REQUEST_TIME' => 1512909223
+]
+2017-12-10 13:41:41 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\bower/bootstrap3-dialog in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('kartik\\dialog\\D...', Array, true)
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('kartik\\dialog\\D...')
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('kartik\\dialog\\D...')
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-dialog\Dialog.php(246): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-dialog\Dialog.php(198): kartik\dialog\Dialog->registerAssets()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Widget.php(140): kartik\dialog\Dialog->run()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(1210): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(793): kartik\detail\DetailView->registerAssets()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(731): kartik\detail\DetailView->runWidget()
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Widget.php(140): kartik\detail\DetailView->run()
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php(48): yii\base\Widget::widget(Array)
+#13 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#16 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#17 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(68): yii\base\Controller->render('view', Array)
+#18 [internal function]: app\controllers\StudentController->actionView('5')
+#19 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#22 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#23 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#25 {main}
+2017-12-10 13:41:30 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '64293'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512909689.272
+    'REQUEST_TIME' => 1512909689
+]
+2017-12-10 13:49:15 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\models\Student::studentCourses in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Component.php:203
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(307): yii\base\Component->__set('studentCourses', Array)
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(1002): yii\db\BaseActiveRecord->__set('studentCourses', Array)
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(66): yii\base\Model->offsetSet('studentCourses', Array)
+#3 [internal function]: app\controllers\StudentController->actionView('5')
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-12-10 13:49:07 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '65064'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512910146.114
+    'REQUEST_TIME' => 1512910146
+]
+2017-12-10 13:57:20 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php:48
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\web\View->renderPhpFile()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\web\View->renderFile()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\web\View->render()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(68): app\controllers\StudentController->render()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\StudentController->actionView()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#11 {main}
+2017-12-10 13:57:15 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '65245'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512910634.08
+    'REQUEST_TIME' => 1512910634
+]
+2017-12-10 13:59:58 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:2] yii\base\ErrorException: Creating default object from empty value in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php:66
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#6 {main}
+2017-12-10 13:59:57 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '65300'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512910797.246
+    'REQUEST_TIME' => 1512910797
+]
+2017-12-10 14:02:56 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: studentModel in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php:66
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#6 {main}
+2017-12-10 14:02:55 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '65378'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512910975.234
+    'REQUEST_TIME' => 1512910975
+]
+2017-12-10 14:03:25 [::1][2][o4taha107e0itrburcl4fn7esb][error][yii\base\ErrorException:2] yii\base\ErrorException: htmlspecialchars() expects parameter 1 to be string, object given in C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\helpers\BaseHtml.php:111
+Stack trace:
+#0 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\i18n\Formatter.php(476): yii\helpers\BaseHtml::encode()
+#1 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\i18n\Formatter.php(439): yii\i18n\Formatter->asText()
+#2 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\i18n\Formatter.php(439): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\i18n\Formatter.php:439}()
+#3 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(967): yii\i18n\Formatter->format()
+#4 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(933): kartik\detail\DetailView->renderAttributeItem()
+#5 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(906): kartik\detail\DetailView->renderAttributeRow()
+#6 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(794): kartik\detail\DetailView->renderDetailView()
+#7 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\kartik-v\yii2-detail-view\DetailView.php(731): kartik\detail\DetailView->runWidget()
+#8 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Widget.php(140): kartik\detail\DetailView->run()
+#9 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\views\student\view.php(62): yii\base\Widget::widget()
+#10 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): yii\web\View->unknown()
+#11 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\web\View->renderPhpFile()
+#12 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\web\View->renderFile()
+#13 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\web\View->render()
+#14 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\controllers\StudentController.php(69): app\controllers\StudentController->render()
+#15 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\StudentController->actionView()
+#16 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#17 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#18 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): app\controllers\StudentController->runAction()
+#19 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#20 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#21 C:\xampp\htdocs\yii2\NEW\project-3-john-bryce\index.php(12): yii\web\Application->run()
+#22 {main}
+2017-12-10 14:03:24 [::1][2][o4taha107e0itrburcl4fn7esb][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk\",2592000]\";}'
+    '_csrf' => 'd9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb\";}'
+    'PHPSESSID' => 'o4taha107e0itrburcl4fn7esb'
+    '_identity' => '686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"19OZloLDK6mquFzGlwSIUdVDdG_IyUa4\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2/NEW/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=20ca4c448825bfe696a883be3cbb38e9602327142ab056a615bc7e48a13e6c58a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wYnp_eYLr6zoKOCJ5awzM6p79vbShXgk%22%2C2592000%5D%22%3B%7D; _csrf=d9f70c3539f67489b483eee91cb02bfdd31f1b5fa8cd3f5b77fdb2f11d288e12a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgoUx35xkFuQGVHtps-oCbiBT4Wn7yNb%22%3B%7D; PHPSESSID=o4taha107e0itrburcl4fn7esb; _identity=686315b6f546210d26fc982bde947422bce558a37911fd8f568e2629b97cc543a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2219OZloLDK6mquFzGlwSIUdVDdG_IyUa4%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\System32;C:\\xampp\\php;C:\\composer;C:\\curl-7.56.1-win32-mingw\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\owner\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\owner\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2/NEW/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '65391'
+    'REDIRECT_URL' => '/yii2/NEW/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/yii2/NEW/project-3-john-bryce/student/view?id=5'
+    'SCRIPT_NAME' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/yii2/NEW/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512911004.503
+    'REQUEST_TIME' => 1512911004
+]
