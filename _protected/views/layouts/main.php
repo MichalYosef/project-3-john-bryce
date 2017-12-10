@@ -66,11 +66,9 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
 
-
-
     NavBar::begin([
         
-        'brandLabel' => Html::img('@siteImages'.'/theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), 
+        'brandLabel' => Html::img('@themes'.'/siteImages/theSchoolLogo.jpg', ['alt'=>Yii::$app->name]), 
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
         ],

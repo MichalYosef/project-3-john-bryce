@@ -5645,3 +5645,2451 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1512911004.503
     'REQUEST_TIME' => 1512911004
 ]
+2017-12-10 16:46:22 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:46:22 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920782.448
+    'REQUEST_TIME' => 1512920782
+]
+2017-12-10 16:46:22 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:46:22 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d56ce7746a'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49655'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d56ce7746a'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d56ce7746a'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d56ce7746a'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920782.667
+    'REQUEST_TIME' => 1512920782
+]
+2017-12-10 16:47:51 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:47:51 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49667'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920871.844
+    'REQUEST_TIME' => 1512920871
+]
+2017-12-10 16:47:52 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:47:51 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d5727dabc1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49668'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d5727dabc1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d5727dabc1'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d5727dabc1'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920871.976
+    'REQUEST_TIME' => 1512920871
+]
+2017-12-10 16:47:53 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:47:53 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920873.097
+    'REQUEST_TIME' => 1512920873
+]
+2017-12-10 16:47:53 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:47:53 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d572924393'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49670'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d572924393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d572924393'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d572924393'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920873.219
+    'REQUEST_TIME' => 1512920873
+]
+2017-12-10 16:49:52 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:49:52 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49691'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920992.902
+    'REQUEST_TIME' => 1512920992
+]
+2017-12-10 16:49:53 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:49:53 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d57a0eb264'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49692'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d57a0eb264'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d57a0eb264'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d57a0eb264'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512920993.046
+    'REQUEST_TIME' => 1512920993
+]
+2017-12-10 16:50:03 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:50:03 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49696'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512921003.235
+    'REQUEST_TIME' => 1512921003
+]
+2017-12-10 16:50:03 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 16:50:03 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d57ab41c7d'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '49698'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d57ab41c7d'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d57ab41c7d'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d57ab41c7d'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512921003.342
+    'REQUEST_TIME' => 1512921003
+]
+2017-12-10 18:11:25 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 18:11:25 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512925885.746
+    'REQUEST_TIME' => 1512925885
+]
+2017-12-10 18:11:25 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 18:11:25 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d6abdc11ed'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50261'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d6abdc11ed'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d6abdc11ed'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d6abdc11ed'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512925885.877
+    'REQUEST_TIME' => 1512925885
+]
+2017-12-10 18:38:55 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 18:38:55 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50379'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512927535.653
+    'REQUEST_TIME' => 1512927535
+]
+2017-12-10 18:38:55 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 18:38:55 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d712fabbff'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50380'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d712fabbff'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d712fabbff'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d712fabbff'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512927535.768
+    'REQUEST_TIME' => 1512927535
+]
+2017-12-10 19:04:34 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:34 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50488'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929074.813
+    'REQUEST_TIME' => 1512929074
+]
+2017-12-10 19:04:35 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:34 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d7732d55e2'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50489'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d7732d55e2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d7732d55e2'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d7732d55e2'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929074.966
+    'REQUEST_TIME' => 1512929074
+]
+2017-12-10 19:04:39 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:39 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50490'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929079.378
+    'REQUEST_TIME' => 1512929079
+]
+2017-12-10 19:04:39 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:39 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d773768ca2'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50491'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d773768ca2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d773768ca2'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d773768ca2'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929079.497
+    'REQUEST_TIME' => 1512929079
+]
+2017-12-10 19:04:40 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:40 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50492'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929080.927
+    'REQUEST_TIME' => 1512929080
+]
+2017-12-10 19:04:41 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:41 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d7738eee15'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50493'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d7738eee15'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d7738eee15'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d7738eee15'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929081.048
+    'REQUEST_TIME' => 1512929081
+]
+2017-12-10 19:04:47 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:47 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/mic/?C=M;O=D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50498'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mic/project-3-john-bryce/'
+    'SCRIPT_NAME' => '/mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929087.901
+    'REQUEST_TIME' => 1512929087
+]
+2017-12-10 19:04:48 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\bower/jquery/dist in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n\r\n    <div cl...')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-10 19:04:48 [::1][-][-][info][application] $_GET = [
+    'tag' => '5a2d773fe4b0c'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/mic/project-3-john-bryce/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '50499'
+    'REDIRECT_URL' => '/mic/project-3-john-bryce/debug/default/toolbar'
+    'REDIRECT_QUERY_STRING' => 'tag=5a2d773fe4b0c'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'tag=5a2d773fe4b0c'
+    'REQUEST_URI' => '/mic/project-3-john-bryce/debug/default/toolbar?tag=5a2d773fe4b0c'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512929088.002
+    'REQUEST_TIME' => 1512929088
+]
+2017-12-10 20:20:48 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:660
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('student')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('student', 'schema', false)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('student')
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\StudentSearch), Array)
+#17 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\StudentSearch.php(54): yii\base\Model->validate()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(42): app\models\StudentSearch->search(Array)
+#19 [internal function]: app\controllers\StudentController->actionIndex()
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#24 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'aschool' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php:597
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(662): yii\db\mysql\Schema->loadTableSchema('student')
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('student', 'schema', false)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(346): yii\db\Schema->getTableSchema('student')
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(281): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\StudentSearch), Array)
+#15 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\models\StudentSearch.php(54): yii\base\Model->validate()
+#16 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(42): app\models\StudentSearch->search(Array)
+#17 [internal function]: app\controllers\StudentController->actionIndex()
+#18 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#22 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2017-12-10 20:20:48 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56168'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/index'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512933648.574
+    'REQUEST_TIME' => 1512933648
+]
+2017-12-10 20:22:18 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student/uploads/Doron.jpg". in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/uploads...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-10 20:22:18 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56233'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512933738.738
+    'REQUEST_TIME' => 1512933738
+]
+2017-12-10 20:33:48 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][Error] Error: Class 'kartik\detail\DetailView' not found in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php:47
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(69): yii\base\Controller->render('view', Array)
+#5 [internal function]: app\controllers\StudentController->actionView('3')
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-10 20:33:48 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56286'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=3'
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/view?id=3'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512934428.792
+    'REQUEST_TIME' => 1512934428
+]
+2017-12-10 20:34:34 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][Error] Error: Undefined class constant 'MODE_VIEW' in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require()
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(69): yii\base\Controller->render('view', Array)
+#5 [internal function]: app\controllers\StudentController->actionView('3')
+#6 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-10 20:34:34 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56293'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=3'
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/view?id=3'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512934474.801
+    'REQUEST_TIME' => 1512934474
+]
+2017-12-10 20:35:13 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: studentModel in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php:37
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(69): yii\base\Controller->render('view', Array)
+#6 [internal function]: app\controllers\StudentController->actionView('3')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-10 20:35:13 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56308'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=3'
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/view?id=3'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512934513.617
+    'REQUEST_TIME' => 1512934513
+]
+2017-12-10 20:35:14 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: studentModel in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php:37
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\views\student\view.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\StudentController))
+#4 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\StudentController))
+#5 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\controllers\StudentController.php(69): yii\base\Controller->render('view', Array)
+#6 [internal function]: app\controllers\StudentController->actionView('3')
+#7 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/view', Array)
+#11 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-10 20:35:14 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56311'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/view'
+    'REDIRECT_QUERY_STRING' => 'id=3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=3'
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/view?id=3'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512934514.7
+    'REQUEST_TIME' => 1512934514
+]
+2017-12-10 20:35:28 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student/uploads/Doron.jpg". in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/uploads...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-10 20:35:27 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/view?id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56326'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512934527.99
+    'REQUEST_TIME' => 1512934527
+]
+2017-12-10 20:44:22 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student/uploads/Doron.jpg". in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/uploads...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-10 20:44:22 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/view?id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56484'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512935062.725
+    'REQUEST_TIME' => 1512935062
+]
+2017-12-10 20:44:57 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student/uploads/Doron.jpg". in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/uploads...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-10 20:44:57 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/view?id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56534'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512935097.143
+    'REQUEST_TIME' => 1512935097
+]
+2017-12-10 20:46:30 [::1][-][lssms7gtumpi48oa6grfgqalv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student/uploads/Doron.jpg". in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/uploads...', Array)
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Mic\project-3-john-bryce\_protected\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Mic\project-3-john-bryce\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-10 20:46:30 [::1][-][lssms7gtumpi48oa6grfgqalv8][info][application] $_COOKIE = [
+    'PHPSESSID' => 'lssms7gtumpi48oa6grfgqalv8'
+    '_csrf' => '11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SMVLC9p8_zz34N95w7_04zyknwmnB33S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Mic/project-3-john-bryce/student/view?id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=lssms7gtumpi48oa6grfgqalv8; _csrf=11f90f552467b8520ac5d06fb2e187927ae5d83ecdfc9517404f18b095ece71da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SMVLC9p8_zz34N95w7_04zyknwmnB33S%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Users\\Jbt\\AppData\\Local\\atom\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Jbt\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Jbt\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\Jbt\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Mic/project-3-john-bryce/index.php'
+    'REMOTE_PORT' => '56679'
+    'REDIRECT_URL' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Mic/project-3-john-bryce/student/uploads/Doron.jpg'
+    'SCRIPT_NAME' => '/Mic/project-3-john-bryce/index.php'
+    'PHP_SELF' => '/Mic/project-3-john-bryce/index.php'
+    'REQUEST_TIME_FLOAT' => 1512935190.409
+    'REQUEST_TIME' => 1512935190
+]

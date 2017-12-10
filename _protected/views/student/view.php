@@ -1,8 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-// use yii\widgets\DetailView;
-use kartik\detail\DetailView;
+use yii\widgets\DetailView;
+// use kartik\detail\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Student */
@@ -33,36 +33,41 @@ $this->title = $model->name;
    
     
     <?php
+    echo DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'id',
+            'name',
+            'phone',
+            'email:email',
+            // 'img:image',
+            [
+                'attribute' => 'image',
+                'format' => 'html',
+                'value' => Html::img($model->img, ['width' => '100px', 'height' => '100px'])
+            ],
+        ],
+    ]) 
+
     // echo DetailView::widget([
-    //     'model' => $studentModel,
-    //     'attributes' => [
+    //     'model'=>$model,
+    //     'condensed'=>true,
+    //     'hover'=>true,
+    //     'mode'=>DetailView::MODE_VIEW,
+    //     'panel'=>[
+    //         'heading'=>'Student # ' . $model->id,
+    //         'type'=>DetailView::TYPE_INFO,
+    //     ],
+    //     'attributes'=>[
     //         'id',
     //         'name',
     //         'phone',
     //         'email:email',
     //         'img:image',
-    //     ],
-    // ]) 
-
-    echo DetailView::widget([
-        'model'=>$model,
-        'condensed'=>true,
-        'hover'=>true,
-        'mode'=>DetailView::MODE_VIEW,
-        'panel'=>[
-            'heading'=>'Student # ' . $model->id,
-            'type'=>DetailView::TYPE_INFO,
-        ],
-        'attributes'=>[
-            'id',
-            'name',
-            'phone',
-            'email:email',
-            'img:image',
-            // ['attribute'=>'studentCourses', 'type'=>DetailView::INPUT_CHECKBOX_LIST]
-            // ['attribute'=>'publish_date', 'type'=>DetailView::INPUT_DATE],
-        ]
-    ]);
+    //         // ['attribute'=>'studentCourses', 'type'=>DetailView::INPUT_CHECKBOX_LIST]
+    //         // ['attribute'=>'publish_date', 'type'=>DetailView::INPUT_DATE],
+    //     ]
+    // ]);
     ?>
 
 </div>

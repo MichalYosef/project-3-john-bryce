@@ -18,6 +18,9 @@ Thumbs.db
 # composer vendor dir
 _protected/vendor
 
+# composer runtime dir
+_protected/runtime
+
 # composer itself is not needed
 composer.phar
 
