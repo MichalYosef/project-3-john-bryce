@@ -49,7 +49,7 @@
                 "_protected/config/web.php"
             ]
         },
-        "asset-installer-paths": {
+        "config.fxp-asset.installer-paths": {
             "npm-asset-library": "_protected/vendor/npm",
             "bower-asset-library": "_protected/vendor/bower"
         }
