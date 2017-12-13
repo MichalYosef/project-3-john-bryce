@@ -15,6 +15,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use Yii;
+use app\Controllers\SchoolController;
 
 /**
  * Site controller.
@@ -86,7 +87,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        // Show school index page by default
+        
+        $schoolCtrl = new SchoolController('school',yii\web\Application::getInstance());
+        return $schoolCtrl->actionIndex();
+
     }
 
     /**
@@ -135,7 +140,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        $this->layout = 'loginLayout';
+        // $this->layout = 'loginLayout';
 
         // user is logged in, he doesn't need to login
         if (!Yii::$app->user->isGuest) {

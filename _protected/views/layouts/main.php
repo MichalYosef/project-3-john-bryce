@@ -30,11 +30,11 @@ AppAsset::register($this);
         }
         
         div{
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         .row{
             height: 80vh;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         .leftCol, .midCol, .mainContainer{
             height: 100%;
@@ -77,7 +77,10 @@ AppAsset::register($this);
     // display Login page to guests of the site
     if (Yii::$app->user->isGuest) {
         
-        $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
+        $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login'],
+                        'options' => [
+                            'class' => 'navbar-right',
+                        ],];
     }
     else
     {
@@ -87,7 +90,10 @@ AppAsset::register($this);
             $menuItems[] = ['label' => Yii::t('app', 'School'), 
                             // 'class' => "pull-left",
                             'url' =>  Yii::$app->homeUrl,
-                            'linkOptions' => ['id' => 'school']];
+                            'linkOptions' => ['id' => 'school',
+                                              'class' => 'navbar-left',
+                            ],
+                        ];
 
             $this->registerJs(
                 "$('#school').on('click', function() { alert('School Button clicked!'); });",
@@ -100,18 +106,17 @@ AppAsset::register($this);
         {
             $menuItems[] = ['label' => Yii::t('app', 'Administration'), 
                             'url' => Yii::$app->homeUrl,
-                            'linkOptions' => ['id' => 'admin']];
+                            'linkOptions' => ['id' => 'admin'],
+                            'options' => [
+                                'class' => 'navbar-left',
+                            ],];
 
             $this->registerJs(
                 "$('#admin').on('click', function() { alert('Admin Button clicked!'); });",
                 View::POS_READY,
                 'admin-block');
 
-                // display Users to admin+ roles
-            if (Yii::$app->user->can('manageUsers')){
-                $menuItems[] = ['label' => Yii::t('app', 'Users'), 
-                                'url' => ['/user/index']];
-            }
+            
         }
 
         // display Logout to logged in users
@@ -136,9 +141,6 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
