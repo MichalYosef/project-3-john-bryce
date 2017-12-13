@@ -85,20 +85,20 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
-    'as beforeRequest' => [  
-        //if guest user access site, redirect to login page.
-        'class' => 'yii\filters\AccessControl',
-        'rules' => [
-            [
-                'actions' => ['login', 'error'],
-                'allow' => true,
-            ],
-            [
-                'allow' => true,
-                'roles' => ['@'],
-            ],
-        ],
-    ],
+    // 'as beforeRequest' => [  
+    //     //if guest user access site, redirect to login page.
+    //     'class' => 'yii\filters\AccessControl',
+    //     'rules' => [
+    //         [
+    //             'actions' => ['login', 'error'],
+    //             'allow' => true,
+    //         ],
+    //         [
+    //             'allow' => true,
+    //             'roles' => ['@'],
+    //         ],
+    //     ],
+    // ],
     // 'modules' => [
     //     'admin' => [
     //         'class' => 'mdm\admin\Module',

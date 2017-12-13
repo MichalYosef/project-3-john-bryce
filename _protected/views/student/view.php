@@ -49,7 +49,7 @@ $this->title = $model->name;
         ],
     ]) ;
 
-    echo CHtml::activeCheckBoxList($model, 'studentCourses', $model->getCourses(), 'itemId', 'itemData'));
+    // echo CHtml::activeCheckBoxList($model, 'studentCourses', $model->getCourses(), 'itemId', 'itemData'));
 
     
 
