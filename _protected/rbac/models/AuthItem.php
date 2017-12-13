@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "auth_item".
  *
  * @property string  $name
- * @property integer $type
+ * @property integer $type (1=Role, 2=Permission)
  * @property string  $description
  * @property string  $rule_name
  * @property string  $data

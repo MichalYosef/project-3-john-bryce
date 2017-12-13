@@ -74,51 +74,59 @@ AppAsset::register($this);
         ],
     ]);
 
-    
-    // we do not need to display About and Contact pages to employee+ roles
-    if (!Yii::$app->user->can('employee')) {
-        $menuItems[] = ['label' => Yii::t('app', 'School'), 
-                        // 'class' => "pull-left",
-                        'url' =>  Yii::$app->homeUrl,
-                        'linkOptions' => ['id' => 'school']];
-
-        $menuItems[] = ['label' => Yii::t('app', 'Administration'), 
-                        'url' => Yii::$app->homeUrl,
-                        'linkOptions' => ['id' => 'admin']];
-    }
-
-    // 
-    $this->registerJs(
-        "$('#school').on('click', function() { alert('School Button clicked!'); });",
-        View::POS_READY,
-        'school-block');
-
-    $this->registerJs(
-        "$('#admin').on('click', function() { alert('Admin Button clicked!'); });",
-        View::POS_READY,
-        'admin-block');
-
-    // display Users to admin+ roles
-    if (Yii::$app->user->can('manager')){
-        $menuItems[] = ['label' => Yii::t('app', 'Users'), 
-                        'url' => ['/user/index']];
-    }
-    
-    // display Logout to logged in users
-    if (!Yii::$app->user->isGuest) {
-        $menuItems[] = [
-            'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
-    }
-
     // display Login page to guests of the site
     if (Yii::$app->user->isGuest) {
         
         $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
     }
+    else
+    {
+               // Show sales content to sales+ users
+        if ( Yii::$app->user->can('useSalesContent')) 
+        {
+            $menuItems[] = ['label' => Yii::t('app', 'School'), 
+                            // 'class' => "pull-left",
+                            'url' =>  Yii::$app->homeUrl,
+                            'linkOptions' => ['id' => 'school']];
 
+            $this->registerJs(
+                "$('#school').on('click', function() { alert('School Button clicked!'); });",
+                View::POS_READY,
+                'school-block');
+        }
+
+        // Show Admin content to manager+ users
+        if (Yii::$app->user->can('useAdminContent')) 
+        {
+            $menuItems[] = ['label' => Yii::t('app', 'Administration'), 
+                            'url' => Yii::$app->homeUrl,
+                            'linkOptions' => ['id' => 'admin']];
+
+            $this->registerJs(
+                "$('#admin').on('click', function() { alert('Admin Button clicked!'); });",
+                View::POS_READY,
+                'admin-block');
+
+                // display Users to admin+ roles
+            if (Yii::$app->user->can('manageUsers')){
+                $menuItems[] = ['label' => Yii::t('app', 'Users'), 
+                                'url' => ['/user/index']];
+            }
+        }
+
+        // display Logout to logged in users
+        if (!Yii::$app->user->isGuest) {
+            $menuItems[] = [
+                'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
+                'url' => ['/site/logout'],
+                'linkOptions' => ['data-method' => 'post']
+            ];
+        }
+
+    }
+
+    // echo navbar with selected items
+    
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
