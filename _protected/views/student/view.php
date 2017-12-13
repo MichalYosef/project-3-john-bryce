@@ -47,7 +47,11 @@ $this->title = $model->name;
                 'value' => Html::img($model->img, ['width' => '100px', 'height' => '100px'])
             ],
         ],
-    ]) 
+    ]) ;
+
+    echo CHtml::activeCheckBoxList($model, 'studentCourses', $model->getCourses(), 'itemId', 'itemData'));
+
+    
 
     // echo DetailView::widget([
     //     'model'=>$model,

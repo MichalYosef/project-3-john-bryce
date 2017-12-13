@@ -79,6 +79,7 @@ class Student extends \yii\db\ActiveRecord
      */
     public function getCourses()
     {
-        return $this->hasMany(Course::className(), ['id' => 'course_id'])->viaTable('student_in_course', ['student_id' => 'id']);
+        $this->$studentCourses =  $this->hasMany(Course::className(), ['id' => 'course_id'])->viaTable('student_in_course', ['student_id' => 'id']);
+        return $this->$studentCourses;
     }
 }

@@ -17,6 +17,7 @@ AppAsset::register($this);
 
     <p>
         <?= Html::a('+', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('+', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?php Pjax::begin(); ?>    <?= GridView::widget([
             'dataProvider' => $courseDataProvider,
